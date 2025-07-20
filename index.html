@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <style>
+        /* CSS Variables for Light Mode */
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" ><span class="logo">Amr Adel</span></a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="theme-toggle" aria-label="Toggle theme" onclick="toggleTheme()"></button>
+            <span class="width"></span>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hi, I'm Amr Adel</h1>
+            <h2>Frontend Developer</h2>
+            <p>I create beautiful, responsive websites with a focus on user experience and clean code. Let me help bring your digital vision to life.</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
+        <div class="hero-image">
+            <img src="imgs/amr_circular.png" alt="Professional developer working on laptop in a modern office setting" />
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>My Journey in Web Development</h3>
+                <p>My journey in web development started with a simple curiosity about how websites are made. I began by learning HTML and CSS, building basic pages and exploring how layout and design work together.</p>
+                <p>As I grew more confident, I started learning JavaScript to make my websites more interactive. I built small projects like to-do lists and landing pages to apply what I was learning.</p>
+                <p>Today, I'm focused on sharpening my frontend skills, learning modern tools like React and improving my UI/UX design sense. I aim to become a professional frontend developer who builds clean, user-friendly websites.</p>
+            </div>
+            <div class="about-image">
+                <img src="imgs/WhoIm.jpg" alt="Portrait of a professional web developer in a business casual attire" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-icon">HTML</div>
+                <div class="skill-name">HTML</div>
+                <p>Semantic markup and accessibility best practices </p>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 95%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">CSS</div>
+                <div class="skill-name">CSS</div>
+                <p>Modern layouts, animations and responsive design</p>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">JS</div>
+                <div class="skill-name">JavaScript</div>
+                <p>ES6+, DOM manipulation and modern frameworks</p>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">GitHub</div>
+                <div class="skill-name">Project Sharing</div>
+                <p>Hosting my projects online , Sharing and managing code easily.</p>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">API</div>
+                <div class="skill-name">REST APIs</div>
+                <p>Integration and consumption of web services</p>
+                <div class="skill-level">
+                    <div class="level-bar" style="width: 75%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <a href="https://amr438.github.io/Prayerr-Time/" target="_blank"><img src="imgs/Prayer.png" alt="E-commerce dashboard with analytics charts and product listings" class="project-image" /></a>
+                <div class="project-content">
+                    <h3 class="project-title">Prayer Time App</h3>
+                    <p class="project-description">Support All Cites of Egypt</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Api Axios</span>
+                        <span class="tag">PWA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <a href="https://a3creatives.com/" target="_blank"> <img src="imgs/a3.png" alt="Mobile app interface for fitness tracking with workout statistics" class="project-image" /></a>
+                <div class="project-content">
+                    <h3 class="project-title">Landing Page</h3>
+                    <p class="project-description">Landing page for a client to showcase services and receive contact messages via email.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Email.js</span>
+                        <span class="tag">Api</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <a href="https://amr438.github.io/ToDoApp/" target="_blank"><img src="imgs/Todo.png" class="project-image" /></a>
+                <div class="project-content">
+                    <h3 class="project-title">Todo App</h3>
+                    <p class="project-description">A simple and responsive To-Do application that allows users to add, delete, and mark tasks as completed. Tasks are saved in local storage to keep data even after refreshing the page.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Localstorage</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>amradel.m2007@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+201145856114</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Cairo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+            
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" required ">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/1DhVr2idYU/" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/amr.adel.74?utm_source=qr&igsh=MTl4MGFkNXI0dmdrMQ==" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/amr-adel-438625262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://wa.me/201145856114" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p class="copyright">© 2025 Amr Adel. All rights reserved.</p>
+    </footer>
+
+<script src="main.js"></script>
+</body>
+</html>
